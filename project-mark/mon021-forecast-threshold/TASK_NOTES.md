@@ -1,44 +1,54 @@
-# Project Mark task: MON-021 v2 forecast-deviation threshold
+# Project Mark task: MON-021 v2 go-live
 
 **Task type:** Data Quality Monitoring & Alerting · **Domain:** Energy Systems & Utilities
-**Shape:** Setting one dial (lowest candidate that clears a fixed bar), with a month-by-month capacity grid
+**Shape:** Setting one dial (lowest candidate threshold that clears a fixed bar), with a month-by-month capacity grid. The correct outcome is a **justified hold**.
 
 ## What to upload where
 
 | Platform step | File |
 |---|---|
 | Prompt | `prompt.md` (paste the text) |
-| Input files (ZIP) | `inputs.zip`: 10 files, 4 formats, largest table 267,218 rows |
+| Input files (ZIP) | `inputs.zip`: 12 files, 4 formats, five EIA tables of 139k-269k rows each |
 | File record / provenance | `provenance.md` / `provenance.csv` |
-| Golden deliverables | `golden/MON-021_v2_threshold_memo.docx`, `golden/MON-021_v2_replay_by_month.csv`, `golden/MON-021_v2_monthly_pages.png` |
+| Golden deliverables | `golden/MON-021_v2_go-live_decision_memo.docx`, `golden/MON-021_v2_go-live_replay_by_month.csv`, `golden/MON-021_v2_go-live_replay.png` |
 
 `solution/` holds the scripts that produce every golden number from the shipped files only. Running `compute.py` against a fresh unzip of `inputs.zip` reproduces the golden CSV byte for byte.
 
 ## The answer
 
-**Ship MON-021 v2 at 75%.** Peak month: May 2026, 26 pages against a capacity of 30. All 91 evaluated EIA-imputed hours raised an alert.
+**Hold. No candidate threshold can ship.** The binding month is **May 2026**. At 75%, the primary on-call gets **40 pages against a capacity of 30**: 26 from MON-021 v2 and 14 from MON-014, which starts paging on-call for the 8 out-of-scope BAs when v1 retires. Adding **+10 triage pages in May 2026** would let 75% ship.
 
-| Threshold | Busiest month | Months over capacity | Imputed hours missed (of 91) | Pages/year |
+| Threshold | Busiest month: on-call / capacity (v2 + MON-014) | Months over | Imputed hours missed (of 91) | Blocked by |
 |---|---|---|---|---|
-| 25% | May 2026: 226 / 30 | 12 (first Oct 2025, 149 vs 30) | 0 | 2,037 |
-| 50% | May 2026: 106 / 30 | 9 (first Jan 2026, 38 vs 30) | 0 | 629 |
-| **75%** | **May 2026: 26 / 30** | **0** | **0** | **187** |
-| 100% | May 2026: 17 / 30 | 0 | 1 (WACM, hour ending 2026-01-26 13:00 UTC, 99.92%) | 100 |
-| 150% | Mar 2026: 13 / 30 | 0 | 34 | 73 |
+| 25% | May 2026: 240 / 30 (226 + 14) | 12 | 0 | capacity |
+| 50% | May 2026: 120 / 30 (106 + 14) | 10 (Dec 2025-Sep 2026; Dec is 25 vs 24) | 0 | capacity |
+| 75% | May 2026: 40 / 30 (26 + 14) | 1 (May 2026) | 0 | capacity in May only |
+| 100% | May 2026: 31 / 30 (17 + 14) | 1 | 1 (WACM, hour ending 2026-01-26 13:00 UTC, 99.92%) | capacity and coverage |
+| 150% | May 2026: 26 / 30 (12 + 14) | 0 | 34 (IID 24, WACM 8, NWMT 1, PSCO 1) | coverage |
 
-- Out of scope (stay on MON-014): AVA, FPC, GVL, LGEE, PSEI, SEC, SPA, TEPC. 47 BAs are evaluated.
-- v1 sent 4,424 pages over the year. 1,581 of them (35.7%) came from those 8 BAs: FPC 365, PSEI 365, SPA 364, SEC 245, GVL 218, TEPC 12, LGEE 9, AVA 3.
+- **May 2026 by BA at 75%.** v2: WALC 10, BANC 5, TIDC 4, IID 2, NEVP 2, AZPS 1, NWMT 1, PACE 1. MON-014: SPA 8, SEC 6.
+- **MON-014 for the year: 54 on-call pages.** SEC 34, SPA 17, LGEE 2, AVA 1.
 
 ## Where the difficulty comes from (all honest data)
 
-1. **Main trap: forecast comparability.** v2's config limits scope to BAs whose forecast and reported demand "describe the same load". The only place that names those BAs is buried in the middle of the 13-page EIA About PDF ("Impact of pseudo-ties and dynamic scheduling on demand forecast"). Their data is correct; their forecast just measures a different load. Replaying all BAs makes **every** candidate fail: 75% is over capacity in all 12 months (peak 85), and 150% is over in 6 months and misses 71 hours. A model that misses this concludes "nothing ships" or picks the wrong setting.
-2. **Capacity is not flat.** The rota sets 24 in Dec 2025 and 26 in Jul/Aug 2026; the ticket comment warns about this.
-3. **Window edges.** The live Jul–Dec 2026 file includes rows from 1–5 Oct 2026, which must be dropped. Months are keyed on the UTC date of the hour-end timestamp.
-4. **Recall universe.** Two imputed FMPP hours have no forecast, so v2 can't evaluate them and they fall outside AC3. Counting them as misses fails every candidate.
-5. **Raw vs adjusted.** The replay has to use the reported `Demand (MW)` column, not `Demand (MW) (Adjusted)`.
-6. **Red herring.** Dropping noisy-but-valid BAs (WALC, FMPP) is explicitly ruled out in the ticket.
-7. **Texture.** Schema drift across files, DST hour 25, generation-only BAs with blank demand, and the April 2026 BA roster change (WACM and WAUW retire, SWPW appears).
+1. **Forecast comparability (scope).** v2's scope covers only BAs whose forecast is prepared "on the same physical basis" as their reported demand. The only place that names the 8 that fail this (AVA, FPC, GVL, LGEE, PSEI, SEC, SPA, TEPC) is the middle of the 13-page EIA About PDF.
+2. **Shared capacity (the binding constraint).** The trap is spread across three files:
+   - CHG-2291 AC1 asks for the paging set-up that takes effect *at go-live*.
+   - The Sentinel export's `scheduled_changes` routes MON-014 to on-call for out-of-scope BAs.
+   - The rota's title row says capacity covers every monitor.
 
-## Still to do on your side
+   A model that checks v2's pages alone answers **"ship 75%"**, which is wrong. A ticket comment repeats that tempting figure; it is correct about v2 alone and incomplete as a decision.
+3. **MON-014 replay.** It needs the 365-day look-back (two extra EIA files, including the 2024 schema) and the accepted-only ceiling. Letting flagged spikes into the history drops 2 pages, in Feb and Mar 2026.
+4. **Smaller traps.**
+   - Rota capacity is uneven (24 in Dec, 26 in Jul and Aug).
+   - The live file includes October 2026 rows, which fall outside the window.
+   - Two FMPP imputed hours have no forecast, so they are outside AC3.
+   - The replay must use reported demand, not adjusted.
+   - Generation-only BAs report no demand or forecast.
+   - The roster changes in April 2026 (WACM and WAUW retire, SWPW appears).
+5. **Wrong path that still says hold.** A model that misses the scope carve-out also says "hold", but for the wrong reason: every candidate up to 100% breaks capacity in most months. It gets the decision line right and almost every number wrong.
 
-- Run the models against the task and check they score under 50%. I could not run the platform's models from here.
+## Blind-test history
+
+- **v1 of this task** (no shared capacity, heavy hints): a fresh agent with only the prompt and ZIP matched the golden exactly (about 90-100%). It was too easy, so the task was hardened.
+- **v2 (this version):** see below.
