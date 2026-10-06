@@ -51,4 +51,6 @@
 ## Blind-test history
 
 - **v1 of this task** (no shared capacity, heavy hints): a fresh agent with only the prompt and ZIP matched the golden exactly (about 90-100%). It was too easy, so the task was hardened.
-- **v2 (this version):** see below.
+- **v2 (this version):** a second fresh agent (strong model, full code tools, unlimited time) also matched the golden: hold, May 2026 at 40 / 30, +10 to ship 75%, and every per-candidate figure. Estimated score about 90-100%. It read every file, found both the scope carve-out and the MON-014 routing change, and checked its engine against the v1 page history.
+
+**Implication:** careful agentic models can solve this. Whether it clears the under-50% bar depends on the platform's two models. Run them before submitting.
