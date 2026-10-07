@@ -1,0 +1,31 @@
+ID,Criterion,Weight,Implicit_Explicit
+1,"The submission recommends putting PSCO, WALC, SWPW, SRP and LDWP on Forecast Watch, sending the formal letter to PSCO, and keeping CISO off Watch.",14,Explicit
+2,The deliverable supports the decision by stating PSCO's margin over second place between 4.9 and 5.0 percentage points.,8,Explicit
+3,The deliverable supports the decision by stating the margin between fifth and sixth place between 0.2 and 0.3 percentage points.,8,Explicit
+4,The deliverable supports the decision by stating that the main compilation reproduces exactly 799 published figures.,6,Implicit
+5,A file named scorecard_q3_2026.csv of type CSV is present.,1,Explicit
+6,A file named scorecard_q3_2026_note.docx of type DOCX is present.,1,Explicit
+7,"The note's main body, before the annex, is no longer than about two pages (roughly 1000 words).",1,Explicit
+8,The CSV file contains exactly 25 data rows.,1,Explicit
+9,"The CSV file includes columns for Q3 forecast error, July figure, August figure, September figure, Q3 rank, and the Watch flag.",1,Explicit
+10,"The CSV file formats the July, August, and September figures to one decimal place.",1,Explicit
+11,The note opens by identifying the Watch list and the BA receiving the formal letter.,1,Explicit
+12,The note contains an annex presenting every published figure alongside the compiled figure and the difference between them.,1,Explicit
+13,A chart of Q3 forecast error for every scorecard BA is present in the note.,1,Explicit
+14,The chart orders the BAs by their forecast error.,1,Explicit
+15,The chart includes a visual mark or line indicating the cut for the Watch list.,1,Explicit
+16,The deliverable states PSCO's Q3 forecast error between 26.9 and 27.0 percent.,4,Explicit
+17,The deliverable states WALC's Q3 forecast error between 21.9 and 22.1 percent.,4,Explicit
+18,The deliverable states LDWP's Q3 forecast error between 8.6 and 8.7 percent.,4,Explicit
+19,The deliverable states CISO's Q3 forecast error between 8.3 and 8.5 percent.,3,Explicit
+20,"The deliverable states NEVP's Q3 forecast error between 7.7 and 7.9 percent, the value that only results when the flatline day is excluded.",4,Explicit
+21,The deliverable states SWPW's Q3 forecast error between 9.9 and 10.1 percent.,2,Explicit
+22,The deliverable states SRP's Q3 forecast error between 9.1 and 9.3 percent.,2,Explicit
+23,The deliverable reports the difference between the published and compiled figures in the annex as exactly 0.0 for every figure.,4,Explicit
+24,The deliverable states that d.whitcombe's bedding-in reading returns exactly 779 of the published figures.,6,Explicit
+25,"The deliverable states that under d.whitcombe's reading, LDWP would fall off the Watch list.",4,Explicit
+26,"The deliverable reports that under d.whitcombe's reading, LDWP's Q3 forecast error would be between 7.6 and 7.7 percent.",3,Implicit
+27,"The deliverable states that under d.whitcombe's reading, CISO would take the fifth Watch place.",4,Explicit
+28,The deliverable states PSCO's July forecast error between 29.2 and 29.4 percent.,3,Explicit
+29,The deliverable states WALC's August forecast error between 30.3 and 30.5 percent.,3,Explicit
+30,The deliverable states LDWP's September forecast error between 12.7 and 12.9 percent.,3,Explicit
