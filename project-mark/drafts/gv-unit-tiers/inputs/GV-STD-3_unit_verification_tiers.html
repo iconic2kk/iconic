@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>GV-STD-3 Unit verification tiers</title>
+<!-- wiki export, space: west-reliability, page id 2281, version 5, exported 2026-10-06 09:40 UTC. Scenario document authored for this exercise. -->
+<style>body{font-family:Arial,Helvetica,sans-serif;max-width:860px;margin:24px auto;line-height:1.45;color:#222}
+table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:4px 8px;font-size:14px}.meta{color:#666;font-size:13px}</style>
+</head>
+<body>
+<p class="meta">west-reliability / Standards / GV-STD-3 &middot; owner: generator verification lead &middot; last edited 2026-02-16 by k.lindqvist &middot; version 5</p>
+<h1>GV-STD-3 Unit verification tiers</h1>
+
+<h2>1. Purpose</h2>
+<p>The desk verifies the real-power capability and dynamic model of every synchronous generating unit in the Western
+footprint on a cycle set by the unit's size. The largest units, which hold most of the footprint's capacity, are verified every
+year; smaller units less often. Tiers are reset once a year for the following calendar year.</p>
+
+<h2>2. Scope</h2>
+<p>A unit is in scope when it is in service in EIA's latest monthly generator inventory (Form EIA-860M) at the time the tiers are
+set, it is synchronous, and its plant sits in the Western footprint.</p>
+<ul>
+<li><em>In service</em>: status OP (operating) or SB (standby/backup), with net summer capacity above zero.</li>
+<li><em>Synchronous</em>: every prime mover except photovoltaic (PV), wind (WT, WS), battery storage (BA) and flywheel (FW).</li>
+<li><em>Western footprint</em>: the plant's balancing authority, as the inventory reports it, is in EIA's California, Northwest or
+Southwest region in the EIA-930 reference tables.</li>
+</ul>
+
+<h2>3. Units and size</h2>
+<p>A unit is a generator, or a group of generators that operates as a single unit; a group counts once. A unit's size is the
+net summer capacity of its in-scope generators, in MW, as the inventory reports it.</p>
+
+<h2>4. Tiers</h2>
+<p>Rank the in-scope units by size, largest first. Tier 1 is the largest units that together hold at least 50% of in-scope
+capacity: its boundary is the size of the smallest unit needed to reach 50%, and every unit of at least that size is in Tier 1.
+Tier 2 is set the same way at 85%, counting Tier 1. Tier 3 is every other in-scope unit. Boundaries are stated in MW as they
+fall, without rounding.</p>
+
+<h2>5. Verification cycle</h2>
+<p>Tier 1 units are verified every year, Tier 2 units every third year and Tier 3 units every sixth year. A year's test calendar
+holds every Tier 1 unit, one third of Tier 2 units and one sixth of Tier 3 units, each fraction rounded up to a whole unit.</p>
+
+<h2>Change log</h2>
+<table>
+<tr><th>Version</th><th>Date</th><th>Change</th></tr>
+<tr><td>5</td><td>2026-02-16</td><td>Scope now taken from the latest EIA-860M inventory rather than the annual EIA-860 release.</td></tr>
+<tr><td>4</td><td>2025-02-10</td><td>Standby (SB) units brought into scope.</td></tr>
+<tr><td>3</td><td>2024-01-22</td><td>Size measured as net summer capacity instead of nameplate capacity.</td></tr>
+</table>
+</body>
+</html>
