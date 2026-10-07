@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DQ-STD-007 Demand backfill standard - grid-data-ops wiki</title>
+<!-- wiki export, space: grid-data-ops, page id 4417, version 6, exported 2026-10-05 16:40 UTC. Scenario document authored for this exercise. -->
+<style>body{font-family:Arial,Helvetica,sans-serif;max-width:860px;margin:24px auto;line-height:1.45;color:#222}
+table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:4px 8px;font-size:14px}.meta{color:#666;font-size:13px}</style>
+</head>
+<body>
+<p class="meta">grid-data-ops / Standards / DQ-STD-007 &middot; owner: data owner, published demand series &middot; last edited 2025-11-03 by d.whitcombe &middot; version 6</p>
+<h1>DQ-STD-007 Demand backfill standard</h1>
+
+<h2>1. Purpose</h2>
+<p>The cleaned hourly demand series we publish is built from the demand values balancing authorities report on Form EIA-930.
+It has to describe the electricity load each BA actually served, hour by hour. This standard sets out when a reported
+demand value may be overwritten (backfilled) in the published series.</p>
+
+<h2>2. When a backfill is allowed</h2>
+<p>An hour may be backfilled only when the demand value the BA reported misstates the load the BA actually served in that hour.</p>
+<p>The following are <strong>not</strong> grounds for a backfill, however far the value sits from expectations:</p>
+<ul>
+<li>real changes in load, including weather, outages, storms, load shedding and restoration;</li>
+<li>hours in which some other value, and not the reported demand, is the one in error.</li>
+</ul>
+
+<h2>3. How backfill jobs are decided</h2>
+<ul>
+<li>Backfill jobs are raised automatically from monitor incidents and list one row per incident.</li>
+<li>The data owner decides each incident as a whole: every hour in an incident is either backfilled or left as reported.</li>
+<li>An approved incident is backfilled exactly as the job specifies. The data owner can remove incidents from a job but cannot change the replacement values.</li>
+<li>The data owner may run a job as submitted, run it with incidents removed, or reject it.</li>
+<li>A decision must rest on evidence in the published EIA-930 data and EIA's documentation of it, and the reasoning is recorded for the governance board.</li>
+</ul>
+
+<h2>4. Change log</h2>
+<table>
+<tr><th>Version</th><th>Date</th><th>Change</th></tr>
+<tr><td>6</td><td>2025-11-03</td><td>Clarified that decisions are made per incident.</td></tr>
+<tr><td>5</td><td>2025-02-14</td><td>Removed the manual-override path; all backfills now go through jobs.</td></tr>
+<tr><td>4</td><td>2024-08-30</td><td>Added governance-board reporting.</td></tr>
+</table>
+</body>
+</html>

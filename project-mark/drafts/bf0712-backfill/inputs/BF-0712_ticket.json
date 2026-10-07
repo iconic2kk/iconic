@@ -1,0 +1,28 @@
+{
+  "export_meta": {
+    "system": "opsdesk-tickets",
+    "exported_utc": "2026-10-05T16:45:03Z",
+    "record_note": "Scenario ticket export authored for this exercise."
+  },
+  "key": "DQ-3318",
+  "type": "Data change",
+  "status": "Awaiting data-owner sign-off",
+  "created_utc": "2026-10-05T09:02:41Z",
+  "reporter": "svc-sentinel",
+  "assignee": "data-owner (published demand series)",
+  "summary": "Backfill job BF-0712: 38 MON-021 deviation incidents, Sep 2024 to Jun 2026",
+  "description": "Sentinel raised BF-0712 from the MON-021 deviation incidents of 24+ consecutive hours between September 2024 and June 2026. As submitted, the job replaces reported demand with the BA's day-ahead forecast for every hour of all 38 incidents (1,408 BA-hours). Net change to published demand as submitted: -1,117,283 MWh. Needs data-owner sign-off under DQ-STD-007 before it runs.",
+  "attachments": ["BF-0712_backfill_job.csv"],
+  "comments": [
+    {
+      "author": "p.natarajan",
+      "created_utc": "2026-10-05T10:14:09Z",
+      "body": "Biggest single line is SWPP in April, then DUK in January and the NEVP days. Those deviations are huge, so it's good to finally get them out of the published series."
+    },
+    {
+      "author": "m.okonkwo",
+      "created_utc": "2026-10-05T11:30:52Z",
+      "body": "Worth noting EIA only imputed demand in two of these incidents (IID, Oct 2024 and May 2026). Not sure whether that tells us anything either way."
+    }
+  ]
+}

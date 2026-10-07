@@ -1,0 +1,39 @@
+incident_id,ba,first_hour_end_utc,last_hour_end_utc,hours,verdict,category,submitted_change_mwh,applied_change_mwh,reason
+BF-0712-01,CPLW,2024-09-27 11:00,2024-09-30 04:00,66,leave as reported,real load,21022,0,"Hurricane Helene outage: demand, generation and neighbour-confirmed interchange fall together, then recover over days"
+BF-0712-02,IID,2024-10-12 08:00,2024-10-13 07:00,24,backfill,demand error,11765,11765,demand reported at about zero while the BA's own generation and interchange show load being served
+BF-0712-03,IID,2024-11-03 08:00,2024-11-04 08:00,25,backfill,demand error,6885,6885,"demand, generation and interchange all reported as zero for a full day while neighbours report flows into IID"
+BF-0712-04,LDWP,2024-11-17 04:00,2024-11-18 07:00,28,backfill,demand error,45642,45642,"generation reading collapses while interchange (confirmed by neighbours) is unchanged, so demand is understated"
+BF-0712-05,IID,2024-11-22 09:00,2024-11-23 08:00,24,backfill,demand error,7125,7125,"demand, generation and interchange all reported as zero while neighbours report flows into IID"
+BF-0712-06,IID,2024-12-20 09:00,2024-12-21 08:00,24,backfill,demand error,7389,7389,"demand, generation and interchange all reported as zero while neighbours report flows into IID"
+BF-0712-07,WAUW,2025-02-10 19:00,2025-02-12 23:00,53,leave as reported,forecast error,-2335,0,demand in line with its prior week and neighbour-confirmed; the day-ahead forecast is the outlier
+BF-0712-08,IID,2025-02-26 09:00,2025-02-27 08:00,24,backfill,demand error,8585,8585,"demand, generation and interchange all reported as zero while neighbours report flows into IID"
+BF-0712-09,IID,2025-04-25 08:00,2025-04-26 07:00,24,backfill,demand error,8120,8120,"demand, generation and interchange all reported as zero while neighbours report flows into IID"
+BF-0712-10,WAUW,2025-07-01 17:00,2025-07-03 05:00,37,leave as reported,real load,-1846,0,"demand above its prior week with neighbour-confirmed extra imports; consistent load, forecast too low"
+BF-0712-11,IID,2025-07-07 08:00,2025-07-08 07:00,24,backfill,demand error,16920,16920,demand reported as zero while generation and interchange stay at normal levels
+BF-0712-12,NEVP,2025-07-25 08:00,2025-07-26 07:00,24,leave as reported,forecast error,-116555,0,forecast stuck at 692 MW for the whole day; demand in line with its prior week
+BF-0712-13,IID,2025-07-27 08:00,2025-07-28 07:00,24,backfill,demand error,13543,13543,"demand, generation and interchange all reported as zero while neighbours report flows into IID"
+BF-0712-14,NEVP,2025-09-10 08:00,2025-09-11 07:00,24,leave as reported,forecast error,-101213,0,forecast stuck at 692 MW for the whole day; demand in line with its prior week
+BF-0712-15,IID,2025-09-16 08:00,2025-09-17 07:00,24,backfill,demand error,13827,13827,demand and generation reported as zero while interchange shows normal imports
+BF-0712-16,WAUW,2025-12-17 23:00,2025-12-23 09:00,131,backfill,demand error,7191,7191,"generation reading drops to about 2 MW while interchange is unchanged, so demand is understated"
+BF-0712-17,TIDC,2025-12-29 09:00,2025-12-30 08:00,24,backfill,demand error,7442,7442,demand reported as zero while generation and interchange stay at normal levels
+BF-0712-18,LDWP,2026-01-01 09:00,2026-01-05 08:00,96,backfill,demand error,207224,207224,"interchange reported as exactly zero for four days while neighbours report about 1,100 MW of imports; generation also collapses"
+BF-0712-19,DUK,2026-01-31 17:00,2026-02-01 19:00,27,leave as reported,real load,-184079,0,cold-weather demand above its prior week with generation up and neighbour-confirmed interchange; forecast too low
+BF-0712-20,FMPP,2026-02-05 16:00,2026-02-07 10:00,43,leave as reported,forecast error,-34499,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-21,FMPP,2026-03-01 01:00,2026-03-02 10:00,34,leave as reported,forecast error,-17940,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-22,FMPP,2026-03-06 20:00,2026-03-07 20:00,25,leave as reported,forecast error,-16370,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-23,FMPP,2026-03-14 14:00,2026-03-15 21:00,32,leave as reported,forecast error,-21685,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-24,FMPP,2026-03-20 13:00,2026-03-21 15:00,27,leave as reported,forecast error,-14391,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-25,WALC,2026-03-20 15:00,2026-03-23 05:00,63,leave as reported,real load,-37625,0,demand above its prior week with neighbour-confirmed extra imports and steady generation; forecast too low
+BF-0712-26,FMPP,2026-03-28 18:00,2026-03-31 09:00,64,leave as reported,forecast error,-42570,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-27,FMPP,2026-04-05 14:00,2026-04-07 08:00,43,leave as reported,forecast error,-29998,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-28,FMPP,2026-04-07 23:00,2026-04-10 09:00,59,leave as reported,forecast error,-34842,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-29,SWPP,2026-04-16 06:00,2026-04-17 05:00,24,leave as reported,forecast error,-636189,0,"forecast collapses to a few thousand MW for a day; demand, generation and interchange normal"
+BF-0712-30,LDWP,2026-04-18 08:00,2026-04-19 07:00,24,backfill,demand error,49475,49475,interchange reported as exactly zero while neighbours report about 430 MW of imports; generation also collapses
+BF-0712-31,FMPP,2026-04-22 22:00,2026-04-24 09:00,36,leave as reported,forecast error,-21674,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-32,SRP,2026-05-04 21:00,2026-05-06 06:00,34,backfill,demand error,59629,59629,"own interchange shows exports about 1,600 MW above what neighbours report, so demand is understated"
+BF-0712-33,NEVP,2026-05-09 08:00,2026-05-10 07:00,24,leave as reported,forecast error,-107826,0,forecast stuck at 692 MW for the whole day; demand in line with its prior week
+BF-0712-34,IID,2026-05-20 08:00,2026-05-21 07:00,24,backfill,demand error,11704,11704,demand reported negative or zero with generation at zero while neighbours report flows into IID
+BF-0712-35,FMPP,2026-05-31 14:00,2026-06-01 16:00,27,leave as reported,forecast error,-23081,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-36,FMPP,2026-06-13 15:00,2026-06-15 16:00,50,leave as reported,forecast error,-44597,0,demand in line with its prior week and neighbour-confirmed; forecast running about 30% low
+BF-0712-37,NEVP,2026-06-18 08:00,2026-06-19 07:00,24,leave as reported,forecast error,-145726,0,forecast stuck at 692 MW for the whole day; demand in line with its prior week
+BF-0712-38,IID,2026-06-22 08:00,2026-06-23 07:00,24,backfill,demand error,14270,14270,demand reported as zero while generation and interchange stay at normal levels

@@ -1,0 +1,35 @@
+{
+ "n": 38,
+ "hours": 1408,
+ "submitted_mwh": -1117283,
+ "approved_n": 17,
+ "approved_hours": 602,
+ "applied_mwh": 496736,
+ "removed_n": 21,
+ "removed_hours": 806,
+ "removed_mwh": -1614019,
+ "by_category": [
+  {
+   "verdict": "backfill",
+   "category": "demand error",
+   "n": 17,
+   "hours": 602,
+   "mwh": 496736
+  },
+  {
+   "verdict": "leave",
+   "category": "forecast error",
+   "n": 17,
+   "hours": 613,
+   "mwh": -1411491
+  },
+  {
+   "verdict": "leave",
+   "category": "real load",
+   "n": 4,
+   "hours": 193,
+   "mwh": -202528
+  }
+ ],
+ "eia_imputed_in_approved": 36
+}

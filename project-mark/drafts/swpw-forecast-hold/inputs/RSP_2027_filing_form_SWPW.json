@@ -1,0 +1,30 @@
+{
+  "form": "RSP summer peak filing",
+  "form_version": "2026.1",
+  "record_note": "Scenario filing form authored for this exercise; fields other than the header are left for the filer.",
+  "program": "Interior West Reserve Sharing Program",
+  "filing_due": "2026-10-31",
+  "summer": 2027,
+  "area": {
+    "area_code": "SWPW",
+    "area_name": "Southwest Power Pool West Balancing Authority Area",
+    "eia930_ba_codes": ["SWPW"],
+    "joined_program": "2026-04-01",
+    "replaces_program_areas": ["WACM", "WAUW"]
+  },
+  "filing": {
+    "forecast_type": null,
+    "summer_2027_peak_hour_demand_mw": null,
+    "observed_peak_hour_demand_mw": null,
+    "observed_peak_hour_end_utc": null,
+    "complete_summers_under_current_configuration": null,
+    "first_committed_filing_date": null,
+    "basis_note": null
+  },
+  "previous_filings": [
+    { "summer": 2025, "area_code": "WACM", "forecast_type": "committed", "peak_mw": 5980 },
+    { "summer": 2025, "area_code": "WAUW", "forecast_type": "committed", "peak_mw": 165 },
+    { "summer": 2026, "area_code": "WACM", "forecast_type": "committed", "peak_mw": 6040 },
+    { "summer": 2026, "area_code": "WAUW", "forecast_type": "committed", "peak_mw": 162 }
+  ]
+}
