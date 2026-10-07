@@ -22,11 +22,9 @@ Put PSCO, WALC, SWPW, SRP and LDWP on Forecast Watch for Q4 2026, and send the f
      - reporting days with 23 or 25 hours.
    - Forecast error is the sum of |demand − forecast| over the sum of demand, times 100. Quarters are computed directly and ranked before rounding.
 6. The note's annex sets all 799 published figures (599 monthly, 200 quarterly, Q3 2024 to Q2 2026) beside the compiled figure. The difference is 0.0 on every one.
-7. Closest reading that does not stand: counting withdrawn notices as bedding-in. It reproduces 795 of 799, missing GCPD Apr 2025 and Q2 2025 and PACE Sep 2025 and Q3 2025. It gives the same Watch list, but CISO falls to 8.24% and the cut margin reads 0.40.
-8. Closest reading that changes the call: no bedding-in (775 of 799), or bedding-in to the end of the effective month as the migration note remembers (779 of 799). LDWP falls to 8.20% or 7.67%, and CISO goes on Watch in its place. Bedding-in lengths of 13 and 15 days reproduce 789 and 783.
-9. Other rejected readings:
-   - keeping EIA-imputed hours (723 of 799) sends the letter to WALC at 46.4%;
-   - UTC months with no screens (495 of 799) puts WALC first and NEVP fifth.
+7. The bedding-in reading d.whitcombe remembers (bedding-in running to the end of the effective month) returns 779 of the 799 published figures. It misses 12 monthly and 8 quarterly figures, all in periods containing a forecast-change notice (e.g. PSCO March 2025, 5.4 published against 4.5; CISO May 2026, 11.8 against 12.2), so FCS-STD-2 section 5 bars it.
+8. Where its Watch list parts from the adopted one: LDWP's bedding-in would run 12 to 30 September, LDWP would fall to 7.67% (eighth), and CISO at 8.40% would take fifth place and go on Watch instead of LDWP, with PACE sixth at 8.22%. The letter would still go to PSCO.
+9. The bedding-in length is pinned by the archive: 13 days returns 789 of 799, 14 days returns all 799, 15 days returns 783.
 10. The note includes a ranked bar chart of Q3 2026 forecast error for all 25 scorecard BAs, with the five Watch BAs highlighted and the cut marked between LDWP and CISO.
 
 ## Block 3: Critical numbers

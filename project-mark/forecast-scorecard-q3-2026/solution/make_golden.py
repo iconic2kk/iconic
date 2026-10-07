@@ -69,16 +69,13 @@ for t in [
     "The bedding-in length is pinned by the archive: 13 days returns 789 figures, 14 returns all 799, 15 returns 783.",
 ]:
     bullet(t)
-para("Closest reading that does not stand", bold=True, size=11.5, space=2)
-v = var
-para(f"The closest reading by count also treats withdrawn notices as bedding-in ({v['bedding-in counting withdrawn notices']['match']} of 799; "
-     "it misses GCPD April 2025 and Q2 2025 and PACE September 2025 and Q3 2025, the periods of the two earlier withdrawn notices: "
-     "2.2 against 1.7, 2.2 against 2.1, 3.9 against 3.1 and 5.8 against 6.0). It keeps the same Watch list, but CISO's Q3 figure falls to 8.24%, so the cut margin would read 0.40 points instead of 0.24. "
-     "The closest reading that changes the call drops bedding-in altogether, or runs it to the end of the effective month as the migration "
-     f"note remembers ({v['no bedding-in']['match']} and {v['bedding-in to end of month']['match']} of 799). Either way LDWP falls to "
-     "8.20% or 7.67% and CISO takes fifth place, so CISO would go on Watch in place of LDWP. Keeping EIA-imputed hours "
-     f"({v['keep EIA-imputed hours']['match']} of 799) would send the letter to WALC at 46.4%, and compiling by UTC month with no screens "
-     f"({v['no screens, UTC month']['match']} of 799) does both: WALC first and NEVP in fifth place.")
+para("The bedding-in reading in the migration note", bold=True, size=11.5, space=2)
+eom = json.load(open("eom_reading.json"))
+para(f"Running bedding-in to the end of the effective month, as d.whitcombe remembers, returns {eom['match']} of the 799 published figures. "
+     "It misses 12 monthly and 8 quarterly figures, all in periods that contain a forecast-change notice (for example PSCO March 2025, "
+     "5.4 published against 4.5 compiled, and CISO May 2026, 11.8 against 12.2), so FCS-STD-2 section 5 bars it. On that reading LDWP's "
+     "bedding-in runs from 12 to 30 September, LDWP falls to 7.67% and eighth place, and CISO at 8.40% takes fifth: CISO would go on Watch "
+     "instead of LDWP, with PACE sixth at 8.22%. The formal letter would still go to PSCO.")
 doc.add_picture("q3_chart.png", width=Inches(6.6))
 para("Q3 2026 scorecard", bold=True, size=11.5, space=2)
 t = doc.add_table(rows=1, cols=7); t.style = "Light Grid Accent 1"
