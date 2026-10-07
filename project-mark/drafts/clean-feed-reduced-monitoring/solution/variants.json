@@ -1,0 +1,233 @@
+{
+ "golden": {
+  "n_at_100": 0,
+  "top": [
+   [
+    "SCL",
+    99.819
+   ],
+   [
+    "TPWR",
+    94.339
+   ],
+   [
+    "TEPC",
+    93.025
+   ],
+   [
+    "PACW",
+    51.585
+   ]
+  ]
+ },
+ "values present, not imputed (tie-break)": {
+  "n_at_100": 18,
+  "top": [
+   [
+    "CISO",
+    100.0
+   ],
+   [
+    "PACE",
+    100.0
+   ],
+   [
+    "PSCO",
+    100.0
+   ],
+   [
+    "SRP",
+    100.0
+   ]
+  ]
+ },
+ "own totals and balance only": {
+  "n_at_100": 1,
+  "top": [
+   [
+    "DOPD",
+    100.0
+   ],
+   [
+    "PSEI",
+    99.955
+   ],
+   [
+    "CHPD",
+    99.955
+   ],
+   [
+    "AZPS",
+    99.819
+   ]
+  ]
+ },
+ "own totals, no balance": {
+  "n_at_100": 1,
+  "top": [
+   [
+    "DOPD",
+    100.0
+   ],
+   [
+    "SRP",
+    99.955
+   ],
+   [
+    "PSEI",
+    99.955
+   ],
+   [
+    "CHPD",
+    99.955
+   ]
+  ]
+ },
+ "golden, no balance check": {
+  "n_at_100": 0,
+  "top": [
+   [
+    "SCL",
+    99.819
+   ],
+   [
+    "TPWR",
+    94.339
+   ],
+   [
+    "TEPC",
+    93.025
+   ],
+   [
+    "EPE",
+    91.531
+   ]
+  ]
+ },
+ "golden, Sum(Valid DIBAs) for TI": {
+  "n_at_100": 0,
+  "top": [
+   [
+    "SCL",
+    99.819
+   ],
+   [
+    "TPWR",
+    94.339
+   ],
+   [
+    "TEPC",
+    93.025
+   ],
+   [
+    "PACW",
+    51.585
+   ]
+  ]
+ },
+ "counterpart within 100 MW": {
+  "n_at_100": 1,
+  "top": [
+   [
+    "DOPD",
+    100.0
+   ],
+   [
+    "CHPD",
+    99.955
+   ],
+   [
+    "SCL",
+    99.819
+   ],
+   [
+    "TEPC",
+    99.547
+   ]
+  ]
+ },
+ "counterpart within 5 MW": {
+  "n_at_100": 0,
+  "top": [
+   [
+    "SCL",
+    99.819
+   ],
+   [
+    "TEPC",
+    99.457
+   ],
+   [
+    "TPWR",
+    97.101
+   ],
+   [
+    "LDWP",
+    90.353
+   ]
+  ]
+ },
+ "all checks within 5 MW": {
+  "n_at_100": 0,
+  "top": [
+   [
+    "TPWR",
+    99.955
+   ],
+   [
+    "SCL",
+    99.864
+   ],
+   [
+    "TEPC",
+    99.819
+   ],
+   [
+    "EPE",
+    96.603
+   ]
+  ]
+ },
+ "all checks within 1 MW": {
+  "n_at_100": 0,
+  "top": [
+   [
+    "SCL",
+    99.819
+   ],
+   [
+    "TEPC",
+    99.638
+   ],
+   [
+    "EPE",
+    96.467
+   ],
+   [
+    "TPWR",
+    94.339
+   ]
+  ]
+ },
+ "one-sided ties fail": {
+  "n_at_100": 0,
+  "top": [
+   [
+    "SCL",
+    99.819
+   ],
+   [
+    "TPWR",
+    94.339
+   ],
+   [
+    "TEPC",
+    90.987
+   ],
+   [
+    "PACW",
+    51.585
+   ]
+  ]
+ }
+}

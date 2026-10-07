@@ -1,0 +1,13 @@
+grid-data-ops | on-call note | 2026-10-05 | scenario document authored for this exercise
+
+Subject: Q4 2026 on-call roster and the reduced-monitoring slot
+
+On-call primary covers the Sentinel paging monitors for every Western BA we ingest from EIA-930. From Q4 the rota drops
+from four engineers to three, so the reduced-monitoring slot under DQ-STD-7 matters more than it used to: the BA in that
+slot stops paging for the quarter and gets the Monday sample check instead.
+
+The slot is decided on the Q3 filing as it stands in EIA's six-month files (July to December 2026 release in the shared
+folder). Roster locks 14 October, 16:00 UTC. Whoever picks it up, please send the BA, its share and the runner-up to the
+desk leads with the note, and the CSV to monitoring-config so the routing change can be loaded.
+
+The Q3 alert summary from Sentinel is in the folder as well, for context.

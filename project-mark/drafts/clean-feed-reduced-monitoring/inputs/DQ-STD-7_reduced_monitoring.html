@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>DQ-STD-7 Reduced monitoring for clean feeds</title>
+<!-- wiki export, space: grid-data-ops, page id 4117, version 4, exported 2026-10-06 08:12 UTC. Scenario document authored for this exercise. -->
+<style>body{font-family:Arial,Helvetica,sans-serif;max-width:860px;margin:24px auto;line-height:1.45;color:#222}
+table{border-collapse:collapse}td,th{border:1px solid #bbb;padding:4px 8px;font-size:14px}.meta{color:#666;font-size:13px}</style>
+</head>
+<body>
+<p class="meta">grid-data-ops / Standards / DQ-STD-7 &middot; owner: grid data desk lead &middot; last edited 2026-03-30 by r.adeyemi &middot; version 4</p>
+<h1>DQ-STD-7 Reduced monitoring for clean feeds</h1>
+
+<h2>1. Purpose</h2>
+<p>On-call capacity is limited. Each quarter the desk moves the Western balancing authority with the cleanest EIA-930 filing
+to reduced monitoring for the following quarter: its Sentinel monitors route to the ops channel instead of paging on-call,
+and its feed is sample-checked once a week.</p>
+
+<h2>2. Coverage</h2>
+<p>Balancing authorities in EIA's California, Northwest and Southwest regions that file demand on Form EIA-930.
+Generation-only balancing authorities are not covered.</p>
+
+<h2>3. Clean hours</h2>
+<p>A BA's quarter is the hours of its reporting days (the EIA-930 "Data Date") that fall in the calendar quarter.</p>
+<p>An hour is <strong>clean</strong> when every value the BA files for that hour is present as filed and agrees exactly with
+every other value in the EIA-930 record for the same quantity, and when the BA's demand, net generation and total
+interchange for the hour balance exactly.</p>
+<p>The values a BA files are its demand, day-ahead demand forecast, net generation, net generation by energy source, total
+interchange, interchange with each directly interconnected balancing authority and, where it reports them, demand by
+subregion. A value that EIA imputed is not present as filed. The EIA-930 record is EIA's published six-month BALANCE,
+INTERCHANGE and SUBREGION files.</p>
+
+<h2>4. Clean-hour share</h2>
+<p>A BA's clean-hour share is its clean hours divided by the hours in its quarter, times 100, stated to three decimals.</p>
+
+<h2>5. Decision</h2>
+<p>The covered BA with the highest clean-hour share moves to reduced monitoring for the next quarter. Ties are broken in
+favour of the BA with the higher average reported demand over the quarter, since moving the larger feed frees more on-call
+time.</p>
+
+<h2>Change log</h2>
+<table>
+<tr><th>Version</th><th>Date</th><th>Change</th></tr>
+<tr><td>4</td><td>2026-03-30</td><td>Section 3 now requires values to agree exactly; the earlier 5 MW allowance is withdrawn.</td></tr>
+<tr><td>3</td><td>2025-12-08</td><td>Demand by subregion added to the values a BA files.</td></tr>
+<tr><td>2</td><td>2025-06-23</td><td>Tie-break on average reported demand added to section 5.</td></tr>
+<tr><td>1</td><td>2025-03-03</td><td>First issue.</td></tr>
+</table>
+</body>
+</html>
