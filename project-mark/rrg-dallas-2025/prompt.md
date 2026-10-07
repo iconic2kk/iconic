@@ -1,0 +1,5 @@
+The County Workforce Board decides on 22 October whether the Relocation and Retention Grant gets a second term or lapses next June, and I'm writing the paper. Under the evaluation agreement the call rests on Census's Vintage 2025 county estimates, which are in the folder with the agreement. I need the recommendation, the effect and how far it sits from the 1.80 bar, and the parallel-movement check and how far it sits from its 1.50 limit.
+
+rrg_evaluation_2025.xlsx is the workbook the board's analysts check: Dallas County and the rest of Texas for the check, base and program years, with each area's domestically sourced growth per 1,000 and its natural change and domestic migration pieces in rate points on the same base, then the effect and the check.
+
+The members get rrg_decision_note.docx, a page or two. Lead with the recommendation, the effect and the check with their margins. Then how much of each area's change from the base year to the program year came from natural change and how much from domestic migration. And a chart of both areas' rates across the three years.
