@@ -1,0 +1,16 @@
+Capital Area Workforce Board | secretariat note | 2026-10-05 | scenario document authored for this exercise
+
+Subject: Displaced tech worker application - figures for the 4 November meeting
+
+The board's tech jobs tracker (board_tech_jobs_tracker_travis.csv) follows private employment in Travis County in three
+industries: data processing and hosting (NAICS 518), other information services (NAICS 519) and computer systems design
+(NAICS 5415). The figures are the third-month employment levels from the Bureau of Labor Statistics' Quarterly Census of
+Employment and Wages, pulled each quarter by industry code.
+
+Several members point to the tracker's other information services line, which fell from 6,883 jobs at the end of 2021 to
+480 at the end of the first quarter of 2022, as the clearest sign of the tech downturn in the county. The draft of the
+board's application to the state for displaced-worker funds cites that fall. Before it goes in, the chair wants the cause
+of the fall established and the board's figures put on a footing that will survive the state's review.
+
+The QCEW county files for Travis County for 2021 to 2023 (annual and quarterly, all industries and ownerships) are in the
+folder with the file layouts and the BLS and Census reference files on industry codes.
