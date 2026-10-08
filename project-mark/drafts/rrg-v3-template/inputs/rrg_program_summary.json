@@ -1,0 +1,21 @@
+{
+  "record": {
+    "program": "Relocation and Retention Grant (RRG)",
+    "county": "Dallas County, Texas",
+    "prepared_by": "RRG program office",
+    "prepared_on": "2026-09-30",
+    "record_note": "Scenario document authored for this exercise. Program activity figures are illustrative and do not enter the board's evaluation calculation."
+  },
+  "term": {"opened": "2024-07-01", "first_term_ends": "2027-06-30", "second_term_if_extended": ["2027-07-01", "2030-06-30"]},
+  "grants_paid_by_quarter": [
+    {"quarter": "2024Q3", "relocation_grants": 412, "retention_payments": 0},
+    {"quarter": "2024Q4", "relocation_grants": 655, "retention_payments": 0},
+    {"quarter": "2025Q1", "relocation_grants": 702, "retention_payments": 318},
+    {"quarter": "2025Q2", "relocation_grants": 811, "retention_payments": 540},
+    {"quarter": "2025Q3", "relocation_grants": 760, "retention_payments": 702},
+    {"quarter": "2025Q4", "relocation_grants": 694, "retention_payments": 755},
+    {"quarter": "2026Q1", "relocation_grants": 731, "retention_payments": 810},
+    {"quarter": "2026Q2", "relocation_grants": 788, "retention_payments": 846}
+  ],
+  "evaluation": {"governing_document": "RRG_evaluation_agreement.pdf", "data_release": "Census Bureau Vintage 2025 county population estimates"}
+}
