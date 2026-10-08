@@ -1,0 +1,5 @@
+I'm writing the Capital Area Housing Council's paper on the Bastrop County Housing Accelerator. On 12 November the council decides whether the program gets a second term or ends this December, and the evaluation agreement sets the test. The Census Bureau's Building Permits Survey files for 2021 to 2024 are in the folder with the agreement and Census's documentation. I need the recommendation, the program effect and how far it sits from the 20-point bar, and the pre-launch check and how far it sits from its 40-point limit.
+
+accelerator_evaluation.xlsx is the workbook the council's analysts check: Bastrop County and each comparison county for 2021 to 2024, the units authorized each year, each area's growth from the base years to the program years, then the effect and the check.
+
+The members get accelerator_decision_note.docx, a page or two. Lead with the recommendation, the effect and the check with their margins. Then how Bastrop's growth compares with each comparison county's. And a chart of units authorized each year, Bastrop County against the comparison area.

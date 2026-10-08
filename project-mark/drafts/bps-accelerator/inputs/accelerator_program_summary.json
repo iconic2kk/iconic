@@ -1,0 +1,15 @@
+{
+  "record": {
+    "program": "Bastrop County Housing Accelerator",
+    "prepared_by": "Accelerator program office",
+    "prepared_on": "2026-09-30",
+    "record_note": "Scenario document authored for this exercise. Activity figures are illustrative and do not enter the council's evaluation."
+  },
+  "term": {"began": "2023-01-01", "first_term_ends": "2026-12-31", "second_term_if_funded": ["2027-01-01", "2029-12-31"]},
+  "activity": [
+    {"year": 2023, "fee_waivers_granted": 612, "plan_reviews_within_15_days": 0.91},
+    {"year": 2024, "fee_waivers_granted": 774, "plan_reviews_within_15_days": 0.94},
+    {"year": 2025, "fee_waivers_granted": 701, "plan_reviews_within_15_days": 0.95}
+  ],
+  "evaluation": {"governing_document": "accelerator_evaluation_agreement.pdf", "data": "Census Bureau Building Permits Survey, annual files 2021-2024"}
+}
