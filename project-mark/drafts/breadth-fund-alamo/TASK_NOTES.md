@@ -30,3 +30,9 @@ Golden misses 0 of 78 ledger lines. H1 alone 39; three years running 39; either 
 
 ## Rebuilding
 `python3 solution/golden.py inputs.zip` (figures.json), `python3 solution/make_golden.py inputs.zip` (workbook, note, chart; needs LibreOffice), `python3 solution/wrong_paths.py inputs.zip out.json`.
+
+## Blind test result (8 October 2026): solved, do not submit
+- Run B solved in full: recovered both unwritten rules from the ledger (all 78 lines), named Wilson and $6,869, rejected model v2 because it fails 2020 to 2022, and explained Medina (the 3131 line, $60,241 of the $67,114 gap).
+- Run A was stopped once B had solved, but its workbook already showed the same answer (Wilson, $6,869, model v2 rejected, "Exact in all 78 county-rounds"). It also tested and ruled out treating published zero-count rows as carried.
+- Lesson: the forward situation (first-year industries) also occurs in the history (2019 to 2021 entries), so the rule it needs is the same one the solver verifies on the ledger. The distractor's three-round backtest did not stop either run; both reconciled every round.
+- Realism nit if reused: charter 4.4 tops up the reserve from contributions, but contributions plus the state grant equal the $5m fund exactly (both runs flagged the 2025 closing balance of $213,725 against the $250,000 minimum).
