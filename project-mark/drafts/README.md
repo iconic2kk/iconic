@@ -15,3 +15,14 @@ folder, together with the EIA reference tables and the two EIA PDFs used in `../
 | `swpw-forecast-hold/` | Forecasting | Provisional filing at 4,866 MW (hour ending 2026-08-03 00:00 UTC); first committed filing 2027-10-31 | Matched exactly |
 
 None of these designs reaches the under-50% bar against strong agentic models; kept for reference.
+
+## Scouted, not built
+
+- **Hidden Simpson's flip, Census school finances (F-33), Texas FY2019 to FY2023.** Real composition gaps exist: across Texas
+  counties with four or more districts, pooled per-pupil instruction growth differs from the within-district (base-enrollment
+  weighted) growth by up to about 10 points (Harrison County +57.8 pooled vs +47.7 within, driven by a district hosting a
+  statewide virtual program; Karnes County +14.9 vs +21.1). Not built because nothing in the real F-33 documentation makes the
+  within-district figure the determinate one: only an explicit rule (which strong models follow) or a requester-practice line
+  (flagged as bait on review) would, and the enrollment jumps behind the gaps are visible enough that agents investigate them.
+  Files: www2.census.gov/programs-surveys/school-finances/tables/YYYY/secondary-education-finance/ (elsec22.txt on the server is
+  truncated; use elsec22.xlsx).
